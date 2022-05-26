@@ -1,0 +1,6 @@
+var comboCounter:FlxSprite = new FlxSprite(0, 0);
+comboCounter.frames = Paths.getSparrowAtlas('UI_assets/Rating/sick-normal',  'shared');
+comboCounter.animation.addByPrefix('comboNote',  "YOUR ANIMATION HERE", 24);
+comboCounter.animation.play('comboNote');
+add(comboCounter);
+comboCounter.cameras = [camHUD]; // PUT IT IF YOU WANT TO THE COMBONOTE TO STICK ON THE HUD
